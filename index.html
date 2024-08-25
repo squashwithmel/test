@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squash My ADHD</title>
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: #929290;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background-color: #000000;
+            color: #929290;
+            text-align: center;
+            padding: 5px 0;
+            font-size: 1rem;
+            position: relative;
+            font-family: 'Bodoni Moda', serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .header img {
+            position: absolute;
+            left: 30px;
+            top: 10px;
+            width: 62.5px;
+            height: auto;
+            filter: brightness(0) invert(1);
+        }
+        .floating-text {
+            position: absolute;
+            font-size: 0.8rem;
+            font-weight: normal;
+            color: #929290;
+            opacity: 0;
+            animation: floatIn 4s forwards;
+        }
+        .letter-a { left: 35px; top: 15px; animation-delay: 1s; }
+        .letter-d1 { left: 44px; top: 15px; animation-delay: 2s; }
+        .letter-h { left: 46px; top: 33px; animation-delay: 3s; }
+        .letter-d2 { left: 55px; top: 33px; animation-delay: 4s; }
+
+        @keyframes floatIn {
+            0% { opacity: 0; transform: translateY(10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .hamburger {
+            position: fixed;
+            top: 15px;
+            right: 30px;
+            cursor: pointer;
+            z-index: 1001;
+        }
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: #a96f13;
+            margin: 4px 0;
+            transition: 0.4s;
+        }
+        .menu {
+            display: none;
+            position: fixed;
+            top: 50px;
+            right: 30px;
+            background-color: black;
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu ul li {
+            margin: 10px 0;
+        }
+        .menu ul li a {
+            text-decoration: none;
+            color: #a96f13;
+            font-size: 1rem;
+        }
+        .content-wrapper {
+            flex-grow: 1;
+            padding: 0 4rem; /* Add padding to the sides */
+        }
+        .content-section {
+            padding: 2rem;
+            max-width: 1000px; /* Set a max width for the content */
+            margin: 0 auto; /* Center the content */
+        }
+        .content-section h2 {
+            color: #a96f13;
+            font-family: 'Amoret Sans', serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .content-section p {
+            font-family: 'Montserrat', sans-serif;
+            color: #929290;
+            font-weight: 400;
+            font-style: normal;
+        }
+        footer {
+            background-color: black;
+            color: #a96f13;
+            text-align: center;
+            padding: 1rem;
+        }
+        @media (max-width: 768px) {
+            .menu {
+                width: 100%;
+                right: 0;
+            }
+        }
+
+@media (max-width: 600px) {
+    .menu {
+        width: 50%; /* Adjust the width for small screens */
+        left: 20%;  /* Center the menu horizontally */
+        right: auto; /* Override the right positioning */
+	/* Added this code to adjust hamburger menu size and position on small devices */
+    }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="Plain-Racket-removebg-preview.png" alt="Racket Logo">
+        <div class="floating-text letter-a">A</div>
+        <div class="floating-text letter-d1">D</div>
+        <div class="floating-text letter-h">H</div>
+        <div class="floating-text letter-d2">D</div>
+        <h1>Squash My ADHD</h1>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="menu" id="menu">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#coaching">Coaching Approach</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#pricing">Pricing & Venues</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+    </div>
+
+    <div class="content-wrapper">
+
+
+<section id="about" class="content-section" style="font-family: Comic Sans MS, sans-serif; font-size: 18px;">
+    <h2 style="text-align: center;">"Unlock Your ADHD Child's Potential through Squash Therapy."</h2>
+</section>
+
+
+<section id="about" class="content-section">
+    <h2 style="text-align: center;">About Me</h2>
+    <p>My name is Melanie. I am a seasoned squash coach, with specific training in Attention-Deficit/Hyperactivity Disorder (ADHD).
+            I hold a professional development certification for ADHD, with a specific focus on:
+            </p>
+            <ul>
+                <li>Changing the ADHD brain</li>
+                <li>ADHD treatment for children and adults and proven strategies to self-regulate, stay on task and manage anxiety and intense emotions</li>
+                <li>Executive Functions, ADHD, and Stress in the Classroom</li>
+            </ul>
+            <p>As a certified squash coach, I have had the privilege of competing at both the provincial level and the World Squash Championship.</p>
+
+        </section>
+
+        <section id="coaching" class="content-section">
+            <h2 style="text-align: center;">Coaching Approach</h2>
+            <h3>Integrating Therapeutic Principles in Squash Coaching</h3>
+<p>Drawing from my expertise in squash and specialized training in ADHD, I have developed a coaching strategy that integrates therapeutic principles to support children with ADHD. The game of squash creates a fun and empowering environment, allowing these children to learn specific techniques and methods that lead to significant improvements in managing their ADHD symptoms.</p>
+
+<h3>Creating a Supportive Environment</h3>
+<p>"Squash My ADHD" not only offers fun-filled coaching tailored for children with ADHD but also fosters a space where they are understood and accepted. Parents gain valuable insights into their children's growth and skill development, making "Squash My ADHD" a vital resource for supporting the mental health and well-being of kids with ADHD.</p>
+
+<h3>Understanding ADHD and Executive Functions</h3>
+<p>ADHD impacts a child's ability to focus, regulate impulses, and manage energy levels. At its core are executive functions—cognitive abilities that serve as the brain’s management system. These functions influence behavior and reveal deeper challenges in how the brain organizes and handles responsibilities.</p>
+
+<h3>The "Squash My ADHD" System</h3>
+<p>This coaching system adapts traditional squash techniques to empower children with ADHD. By blending physical activity with cognitive development, I offer a holistic approach that strengthens and supports executive functions. My goal is to use specific movements, paired with cognitive challenges requiring focus, strategy, and quick decision-making, to help children with ADHD complete tasks more effectively.</p>
+
+<h3>Key Benefits of Squash for ADHD</h3>
+<ul>
+    <li>Improved Focus and Attention: Training the brain to sustain concentration for longer periods.</li>
+    <li>Enhanced Planning and Organization: Teaching planning and organizational skills through squash.</li>
+    <li>Better Impulse Control: Helping children regulate their impulses and emotions.</li>
+    <li>Strengthened Working Memory: Using squash to learn and recall movement sequences.</li>
+    <li>Boosted Confidence and Emotional Regulation: Combining physical activity with praise and affirmation to uplift mood and emotional regulation.</li>
+</ul>
+
+<h3>A Supportive Space for Unique Needs</h3>
+<p>Parenting children with ADHD can be both challenging and exhausting. These children are unique and need individualized guidance tailored to how their brains function. My squash coaching style offers a supportive space where kids with ADHD are managed and encouraged without judgment.</p>
+
+        </section>
+
+        <section id="contact" class="content-section">
+            <h2 style="text-align: center;">Contact</h2>
+           <p><strong>Melanie Knibbs</strong></p>
+            <p>Phone/WhatsApp: 063 783 2422</p>
+            <p>Email: <a href="mailto:melanieknibbs1@gmail.com">melanieknibbs1@gmail.com</a></p>
+        </section>
+
+        <section id="pricing" class="content-section">
+            <h2 style="text-align: center;">Pricing & Venues</h2>
+            <p><strong>Times:</strong> Based on availability - call or email to book your time slot.</p>
+            <p><strong>Venue:</strong> My home venue is CBC Old Boys in Groenkloof, Pretoria. Arrangements can be made if you have a preferred venue.</p>
+            <p><strong>Prices:</strong> R450/hour</p>
+
+        </section>
+
+        <section id="faq" class="content-section">
+    <h2 style="text-align: center;">FAQ</h2>
+
+    <div class="faq-item">
+        <h3>What is ADHD?</h3>
+        <div class="faq-content">
+            <p>ADHD (Attention-Deficit/Hyperactivity Disorder) is a neurodevelopmental disorder marked by consistent patterns of inattention, hyperactivity, and impulsivity. These symptoms disrupt daily activities and developmental progress, particularly by impairing executive functions.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <h3>What are Executive Functions?</h3>
+        <div class="faq-content">
+            <p>Executive functions refer to a set of mental skills that are crucial for managing time, focusing attention, and regulating emotions. These include planning, organization, self-control, working memory, and flexible thinking, among others.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <h3>Can you provide a list of the key Executive Functions?</h3>
+        <div class="faq-content">
+            <h4>1. Task Initiation</h4>
+            <p>This is the ability to begin a task or activity without undue procrastination. It involves overcoming inertia and starting on tasks promptly and efficiently.</p>
+
+            <h4>2. Planning and Prioritizing</h4>
+            <p>This involves creating a roadmap to reach a goal or complete a task. It includes determining the necessary steps, setting timelines, and prioritizing actions according to their importance and urgency.</p>
+
+            <h4>3. Organization</h4>
+            <p>This executive function involves creating and maintaining systems to keep track of information and materials. It helps in structuring one's environment and thoughts in an orderly and efficient manner.</p>
+
+            <h4>4. Metacognition</h4>
+            <p>This is the ability to think about and analyze one's own thinking and learning processes. It involves self-reflection, self-awareness, and the ability to adjust strategies based on what has been learned.</p>
+
+            <h4>5. Emotional Regulation</h4>
+            <p>This is the ability to manage and respond to emotional experiences in a healthy and adaptive way. It includes controlling emotional reactions and maintaining emotional balance.</p>
+
+            <h4>6. Time Management</h4>
+            <p>This function involves estimating how much time one has, how to allocate it effectively to complete tasks, and adhering to deadlines. It requires an understanding of time and the ability to plan accordingly.</p>
+
+            <h4>7. Goal-Directed Persistence</h4>
+            <p>This is the capacity to maintain focus and effort towards a goal despite obstacles, distractions, or setbacks. It involves sustained effort and resilience to achieve long-term objectives.</p>
+
+            <h4>8. Sustained Attention</h4>
+            <p>This is the ability to maintain focus on a task or activity over an extended period. It includes filtering out distractions and remaining concentrated until the task is completed.</p>
+
+            <h4>9. Flexibility</h4>
+            <p>This involves the capacity to adapt to changing conditions, shift strategies when necessary, and see situations from different perspectives. It includes being open to new approaches and adjusting plans as needed.</p>
+
+            <h4>10. Stress Tolerance</h4>
+            <p>This is the ability to cope with stress and pressure in a resilient manner. It involves maintaining performance and emotional stability even in challenging or high-stress situations.</p>
+
+            <h4>11. Working Memory</h4>
+            <p>This is the ability to hold and manipulate information in one's mind for short periods. It is crucial for tasks that require following multi-step instructions, problem-solving, and making decisions based on currently held information.</p>
+        </div>
+    </div>
+</section>
+
+    </div>
+
+    <footer>
+        <p>© 2024 Squash My ADHD. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+
+        // Close menu after clicking a link
+        var menuLinks = document.querySelectorAll('.menu ul li a');
+        menuLinks.forEach(function(link) {
+            link.addEventListener('click', function() {
+                document.getElementById('menu').style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
