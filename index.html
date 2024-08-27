@@ -152,6 +152,22 @@
     }
 }
 
+/* Add this CSS inside your <head> or in your CSS file too make Google Maps device responsive*/
+  .map-responsive {
+      position: relative;
+      overflow: hidden;
+      padding-bottom: 56.25%; /* Aspect ratio of 16:9 */
+      height: 0;
+  }
+
+  .map-responsive iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+  }
 
     </style>
 </head>
@@ -245,9 +261,9 @@
             <p><strong>Prices:</strong> R490/hour</p>
 
 
-<!-- Google Map Embed -->
-    <div style="text-align: center; margin-top: 20px;">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.9296575911735!2d28.218239610845995!3d-25.77288687725039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95618cf0cbb973%3A0x542eea6d61b441c7!2sCBC%20Old%20Boys%20Pretoria%20Squash%20Club!5e0!3m2!1sen!2sza!4v1724736407509!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!-- Google Map Embed - Responsive -->
+    <div class="map-responsive">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.9296575911735!2d28.218239610845995!3d-25.77288687725039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95618cf0cbb973%3A0x542eea6d61b441c7!2sCBC%20Old%20Boys%20Pretoria%20Squash%20Club!5e0!3m2!1sen!2sza!4v1724736407509!5m2!1sen!2sza" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
         </section>
 
